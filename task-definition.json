@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:153046341652:task-definition/dharanitask:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:153046341652:task-definition/dharanitask:4",
     "containerDefinitions": [
         {
             "name": "container5",
-            "image": "153046341652.dkr.ecr.us-east-1.amazonaws.com/dharanirepo",
+            "image": "153046341652.dkr.ecr.us-east-1.amazonaws.com/dharanirepo:a9e65092ddf1d9f12dc892ff85587b6867941c96",
             "cpu": 1024,
             "memory": 3072,
             "memoryReservation": 1024,
@@ -18,10 +18,8 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -29,8 +27,7 @@
                     "awslogs-group": "/ecs/dharanitask",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": []
+                }
             },
             "systemControls": []
         }
@@ -39,7 +36,7 @@
     "taskRoleArn": "arn:aws:iam::153046341652:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::153046341652:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 4,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -94,7 +91,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-03-02T14:59:05.799Z",
-    "registeredBy": "arn:aws:iam::153046341652:root",
+    "registeredAt": "2024-03-04T11:14:26.575Z",
+    "registeredBy": "arn:aws:iam::153046341652:user/cloudteam",
     "tags": []
 }
